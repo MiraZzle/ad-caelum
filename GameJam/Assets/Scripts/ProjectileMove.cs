@@ -27,6 +27,11 @@ public class ProjectileMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        int deathZone = 10;
+        if (transform.position.x < -deathZone || transform.position.x > deathZone 
+            || transform.position.y < -deathZone || transform.position.y > deathZone)
+        {
+            Destroy(gameObject);
+        }
     }
 }
