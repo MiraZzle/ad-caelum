@@ -99,8 +99,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AssetsPPU: 32
-  m_RefResolutionX: 320
-  m_RefResolutionY: 192
+  m_RefResolutionX: 600
+  m_RefResolutionY: 400
   m_UpscaleRT: 1
   m_PixelSnapping: 0
   m_CropFrameX: 0
@@ -118,4 +118,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c8380dd6347199488d668d847a2d9c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}

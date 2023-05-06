@@ -488,11 +488,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5322667163015015561, guid: 5e6ef3e3e8b1b464d873a4de2a79c3e8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.42
+      value: 5.1
       objectReference: {fileID: 0}
     - target: {fileID: 5322667163015015561, guid: 5e6ef3e3e8b1b464d873a4de2a79c3e8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.63
+      value: -2.47
       objectReference: {fileID: 0}
     - target: {fileID: 5322667163015015561, guid: 5e6ef3e3e8b1b464d873a4de2a79c3e8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -532,15 +532,19 @@ PrefabInstance:
       objectReference: {fileID: 1241627088828488975}
     - target: {fileID: 5322667163015015606, guid: 5e6ef3e3e8b1b464d873a4de2a79c3e8, type: 3}
       propertyPath: maxX
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5322667163015015606, guid: 5e6ef3e3e8b1b464d873a4de2a79c3e8, type: 3}
+      propertyPath: maxY
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5322667163015015606, guid: 5e6ef3e3e8b1b464d873a4de2a79c3e8, type: 3}
       propertyPath: minX
-      value: 0
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 5322667163015015606, guid: 5e6ef3e3e8b1b464d873a4de2a79c3e8, type: 3}
       propertyPath: minY
-      value: 0
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 5322667163015015606, guid: 5e6ef3e3e8b1b464d873a4de2a79c3e8, type: 3}
       propertyPath: Angel
@@ -552,15 +556,15 @@ PrefabInstance:
       objectReference: {fileID: 563151756}
     - target: {fileID: 5322667163015015606, guid: 5e6ef3e3e8b1b464d873a4de2a79c3e8, type: 3}
       propertyPath: monkCount
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5322667163015015606, guid: 5e6ef3e3e8b1b464d873a4de2a79c3e8, type: 3}
       propertyPath: angleCount
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5322667163015015606, guid: 5e6ef3e3e8b1b464d873a4de2a79c3e8, type: 3}
       propertyPath: priestCount
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5322667163015015607, guid: 5e6ef3e3e8b1b464d873a4de2a79c3e8, type: 3}
       propertyPath: m_Name

@@ -28,7 +28,7 @@ public class PlayerAttack : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) && !stabbing)
         {
-            Instantiate(projectile, player.transform.position, firePosition.rotation); 
+            Instantiate(projectile, firePosition.position, firePosition.rotation); 
         }
         if (Input.GetKeyDown(KeyCode.Space) && !stabbing) 
         {
