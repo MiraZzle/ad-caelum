@@ -7,7 +7,7 @@ public class EnemyMove : MonoBehaviour
 {
     private GameObject player;
     public AIPath aipath;
-    public float radius = 3.0f;
+    private float radius = 8f;
     public bool canMove = true;
 
     private Vector2 direction;
@@ -18,6 +18,7 @@ public class EnemyMove : MonoBehaviour
     {
         sprite = GetComponent<SpriteRenderer>();
         player = GameObject.FindGameObjectWithTag("Player");
+        aipath.canMove = false;
 
     }
 
@@ -39,16 +40,18 @@ public class EnemyMove : MonoBehaviour
     private void Velocity()
     {
         var positionPlayer = player.transform.position;
-        var positionEnemy = aipath.position;
+        var positionEnemy = transform.position;
 
         float distance = Vector2.Distance(positionEnemy, positionPlayer);
+        //Debug.Log($"dist = {distance.ToString()}");
+
         if (distance < radius)
         {
-            //transform.stop();
-            canMove = true;
-            aipath.canMove = canMove;
-            Debug.Log("Oh no");
+            Debug.Log($"dist = {distance.ToString()}");
+
+            aipath.canMove = true;
         }
+        
 
     }
 

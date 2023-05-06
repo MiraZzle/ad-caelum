@@ -162,7 +162,7 @@ MonoBehaviour:
   radius: 0.5
   height: 2
   canMove: 0
-  maxSpeed: 2
+  maxSpeed: 3
   gravity: {x: 0, y: 0, z: 0}
   groundMask:
     serializedVersion: 2
@@ -215,7 +215,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aipath: {fileID: 3365421226425373051}
-  radius: 3
   canMove: 0
 --- !u!50 &7571243560128141223
 Rigidbody2D:
@@ -262,7 +261,7 @@ GameObject:
   - component: {fileID: 2101870997020453706}
   - component: {fileID: 973118265519569412}
   - component: {fileID: 3624925446566269954}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Bible
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -10,8 +10,8 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] Transform firePosition;
     [SerializeField] GameObject projectile;
     GameObject player;
-    private static float stabDuration = 0.2f;
-    private static float stabRange = 3;
+    private static float stabDuration = 0.3f;
+    private static float stabRange = 4;
     private float stabVelocity = stabRange / stabDuration;
     private Vector3 stabDir;
     private float timer = 0f;

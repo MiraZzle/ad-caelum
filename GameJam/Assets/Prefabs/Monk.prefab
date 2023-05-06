@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 281548401820997202}
   - component: {fileID: 1692900919326476420}
   - component: {fileID: 82994784279718858}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Krucifix
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,8 +100,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 8941386414136501860}
-  attackRadius: 4
-  randomness: 0.2
+  attackRadius: 6
+  randomness: 0.5
 --- !u!50 &1692900919326476420
 Rigidbody2D:
   serializedVersion: 4
@@ -166,7 +166,6 @@ GameObject:
   - component: {fileID: 8941386414136501859}
   - component: {fileID: 6994008972354928859}
   - component: {fileID: 6983402702868101266}
-  - component: {fileID: 5361244877344846168}
   m_Layer: 3
   m_Name: Monk
   m_TagString: Enemy
@@ -331,9 +330,9 @@ MonoBehaviour:
   targetCompatibility: {fileID: 0}
   maxAcceleration: -2.5
   rotationSpeed: 360
-  slowdownDistance: 5
+  slowdownDistance: 8
   pickNextWaypointDist: 1.2
-  endReachedDistance: 4
+  endReachedDistance: 6
   alwaysDrawGizmos: 0
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
@@ -365,7 +364,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aipath: {fileID: 8941386414136501857}
-  radius: 3
   canMove: 0
 --- !u!50 &6994008972354928859
 Rigidbody2D:
@@ -401,17 +399,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 3
---- !u!114 &5361244877344846168
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8941386414136501860}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9d85195d5968a4428f67979f5f0e783, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  krucifixDestroyed: 0
-  projectile: {fileID: 4412794489136669152}
