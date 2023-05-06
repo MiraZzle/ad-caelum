@@ -7,15 +7,12 @@ public class PlayerHealth : MonoBehaviour
     public int maxHealth = 100;
     public int minHealth = 0;
     public int currHealth;
-
     public HealthBar healthBar;
-    public Fade fade;
 
     void Start()
     {
         currHealth = maxHealth;
         healthBar.setup (maxHealth);
-        fade.setupFade(maxHealth);
     }
 
     void Update()
@@ -34,7 +31,6 @@ public class PlayerHealth : MonoBehaviour
             currHealth = minHealth; 
         }
         healthBar.setHealth(currHealth);
-        fade.setHealthFade(currHealth);
     }
 
 }

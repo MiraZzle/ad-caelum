@@ -8,6 +8,7 @@ public class HealthBar : MonoBehaviour
     public Slider slider;
     public Gradient fill;
     public Image fillColor;
+        
 
     public void setup(int hp)
     {
