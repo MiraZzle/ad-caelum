@@ -8,22 +8,21 @@ public class WeaponMove : MonoBehaviour
     private Rigidbody2D rb;
     [SerializeField] private float moveSpeed = PlayerMove.moveSpeed;
     [SerializeField] PlayerAttack attack;
+    GameObject player;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     void Update()
     {
-        float dirX = Input.GetAxisRaw("Horizontal");
-        float dirY = Input.GetAxisRaw("Vertical");
-        Vector2 velocity = new Vector2(dirX, dirY);
-        velocity = velocity.normalized * moveSpeed;
-        rb.velocity = velocity;
-
-        if (!attack.stabbing) faceMouse();
-
+        if (!attack.stabbing)
+        {
+            transform.position = player.transform.position;
+            faceMouse();
+        }
     }
     void faceMouse()
     {
@@ -37,4 +36,6 @@ public class WeaponMove : MonoBehaviour
 
         transform.up = direction;
     }
+
+
 }

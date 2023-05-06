@@ -4,14 +4,24 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - PlayerProjectile
+  - Enemy
+  - trident
+  - ep
+  - pp
+  - p
+  - Spawner
+  - Logic
+  - wall
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Obstackes
   - Water
   - UI
+  - PlayerProjectile
+  - PlayerTrident
+  - EnemyAttack
   - 
   - 
   - 
@@ -29,9 +39,6 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - BackGround
   - 
   - 
   - 
@@ -42,9 +49,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Player
-    uniqueID: 1182333527
+  - name: Enemy
+    uniqueID: 1366800947
     locked: 0
-  - name: Weapon
-    uniqueID: 668264631
+  - name: Player
+    uniqueID: 361833645
+    locked: 0
+  - name: Projectile
+    uniqueID: 538200063
+    locked: 0
+  - name: Trident
+    uniqueID: 4170294265
     locked: 0
