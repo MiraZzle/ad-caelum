@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class PlayerLife : MonoBehaviour
 {
-
+    public int hp = 20;
+    public bool isALive = true;
     void Start()
     {
-        
+
     }
 
-    // Update is called once per frame
-    void Update()
+    public void TakeDamage(int damage)
     {
-        
+        hp -= damage;
+        if (hp <= 0)
+        {
+            isALive = false;
+        }
     }
 }
