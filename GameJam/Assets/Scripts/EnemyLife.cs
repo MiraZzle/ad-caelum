@@ -5,11 +5,12 @@ using UnityEngine;
 
 public class EnemyLife : MonoBehaviour {
     [SerializeField] private int hp = 0;
-    [SerializeField] private SimpleFlash simpleFlash;
+    private SimpleFlash simpleFlash;
     GameObject logicManager;
     LevelLogic logicScript;
 
     void Start() {
+        simpleFlash = gameObject.GetComponent<SimpleFlash>();
         logicManager = GameObject.FindGameObjectWithTag("Logic");
         logicScript = logicManager. GetComponent<LevelLogic>();
     }
