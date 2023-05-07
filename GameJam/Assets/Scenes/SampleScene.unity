@@ -149,6 +149,17 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &563151776 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8804068829564281225, guid: 91e7d4201cebe7d4293d9defb65f1bd2, type: 3}
+  m_PrefabInstance: {fileID: 1487578104}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 563151756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dde967761b8483aba8572c67d2a5f04e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &580471710
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -427,6 +438,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Priest
       objectReference: {fileID: 0}
+    - target: {fileID: 8218643836137828911, guid: 91e7d4201cebe7d4293d9defb65f1bd2, type: 3}
+      propertyPath: simpleFlash
+      value: 
+      objectReference: {fileID: 563151776}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91e7d4201cebe7d4293d9defb65f1bd2, type: 3}
 --- !u!1001 &1943735088
@@ -913,9 +928,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1433091552314644261, guid: 7d03a3c6274ab6c4fb1cc1421cfbf85e, type: 3}
-      propertyPath: m_TileSpriteArray.Array.data[18].m_Data
+      propertyPath: m_TileSpriteArray.Array.data[15].m_Data
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1433091552314644261, guid: 7d03a3c6274ab6c4fb1cc1421cfbf85e, type: 3}
+      propertyPath: m_TileSpriteArray.Array.data[18].m_Data
+      value: 
+      objectReference: {fileID: 341990263, guid: 651a5b91338cd8f41a3a27bd337df3ac, type: 3}
     - target: {fileID: 1433091552314644261, guid: 7d03a3c6274ab6c4fb1cc1421cfbf85e, type: 3}
       propertyPath: m_TileAssetArray.Array.data[0].m_RefCount
       value: 0
@@ -1189,8 +1208,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1433091552314644261, guid: 7d03a3c6274ab6c4fb1cc1421cfbf85e, type: 3}
-      propertyPath: m_TileSpriteArray.Array.data[18].m_RefCount
+      propertyPath: m_TileSpriteArray.Array.data[15].m_RefCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1433091552314644261, guid: 7d03a3c6274ab6c4fb1cc1421cfbf85e, type: 3}
+      propertyPath: m_TileSpriteArray.Array.data[18].m_RefCount
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1433091552314644261, guid: 7d03a3c6274ab6c4fb1cc1421cfbf85e, type: 3}
       propertyPath: m_Tiles.Array.data[66].second.m_AllTileFlags
@@ -1266,7 +1289,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1433091552314644261, guid: 7d03a3c6274ab6c4fb1cc1421cfbf85e, type: 3}
       propertyPath: m_Tiles.Array.data[33].second.m_TileSpriteIndex
-      value: 15
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 1433091552314644261, guid: 7d03a3c6274ab6c4fb1cc1421cfbf85e, type: 3}
       propertyPath: m_Tiles.Array.data[34].second.m_TileSpriteIndex
@@ -3028,6 +3051,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1241627088828488995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241627088828488975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dde967761b8483aba8572c67d2a5f04e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashMaterial: {fileID: 2100000, guid: d462f6e9378137a4ebf7e955a9a55fed, type: 2}
+  duration: 0.125
 --- !u!1 &3365421226273407205 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1857670365520651482, guid: d263103a91f1c0e419122135baed0e82, type: 3}
@@ -3066,6 +3103,17 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3365421226273407254 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4909899027123852646, guid: d263103a91f1c0e419122135baed0e82, type: 3}
+  m_PrefabInstance: {fileID: 3995719386545972287}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3365421226273407205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dde967761b8483aba8572c67d2a5f04e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3995719386545972287
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3129,6 +3177,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 739151790}
+    - target: {fileID: 7204190549681333847, guid: d263103a91f1c0e419122135baed0e82, type: 3}
+      propertyPath: simpleFlash
+      value: 
+      objectReference: {fileID: 3365421226273407254}
     m_RemovedComponents:
     - {fileID: 7106577193810475454, guid: d263103a91f1c0e419122135baed0e82, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d263103a91f1c0e419122135baed0e82, type: 3}
@@ -3297,6 +3349,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6983402702868101266, guid: e3d43f5e974697344a90de06cbe91d0e, type: 3}
+      propertyPath: simpleFlash
+      value: 
+      objectReference: {fileID: 1241627088828488995}
     - target: {fileID: 8941386414136501858, guid: e3d43f5e974697344a90de06cbe91d0e, type: 3}
       propertyPath: target
       value: 
@@ -3353,5 +3409,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2629842061180821759, guid: e3d43f5e974697344a90de06cbe91d0e, type: 3}
+    - {fileID: 2231979222414027168, guid: e3d43f5e974697344a90de06cbe91d0e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e3d43f5e974697344a90de06cbe91d0e, type: 3}

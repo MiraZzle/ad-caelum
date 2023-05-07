@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 7204190549681333847}
   - component: {fileID: -1536757890015308414}
   - component: {fileID: 8101656052787553807}
+  - component: {fileID: 4909899027123852646}
   m_Layer: 3
   m_Name: Angel
   m_TagString: Enemy
@@ -80,7 +81,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1366800947
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -1270650860, guid: 2ef022ad2c4a7c843b2bd8d345ce0382, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -250,6 +251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 10
+  hit: {fileID: 4909899027123852646}
 --- !u!95 &-1536757890015308414
 Animator:
   serializedVersion: 5
@@ -285,3 +287,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackRadius: 6
   projectile: {fileID: 7185932647736743711, guid: 24725d5e268f6724fb885e69b5ddc651, type: 3}
+--- !u!114 &4909899027123852646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857670365520651482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dde967761b8483aba8572c67d2a5f04e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashMaterial: {fileID: 2100000, guid: d462f6e9378137a4ebf7e955a9a55fed, type: 2}
+  duration: 0.125

@@ -50,6 +50,9 @@ TagManager:
   - name: wall
     uniqueID: 3890275133
     locked: 0
+  - name: prefabDecorations
+    uniqueID: 3346079367
+    locked: 0
   - name: Enemy
     uniqueID: 1366800947
     locked: 0
@@ -64,7 +67,4 @@ TagManager:
     locked: 0
   - name: Trident
     uniqueID: 4170294265
-    locked: 0
-  - name: New Layer 7
-    uniqueID: 4070785859
     locked: 0
