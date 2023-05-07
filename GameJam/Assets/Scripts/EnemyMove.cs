@@ -5,7 +5,6 @@ using Pathfinding;
 
 public class EnemyMove : MonoBehaviour {
     public AIPath aipath;
-    public bool canMove = true;
 
     private float radius = 8f;
     private GameObject player;
@@ -14,11 +13,13 @@ public class EnemyMove : MonoBehaviour {
     private SpriteRenderer sprite;
     private float lastStateX = 0f;
     private float lastStateY = 0f;
-    private float befX = 0f;
-    private float befY = 0f;
+
+    private float idleCooldown = 0.15f;
+    private float timer = 0f;
 
     // Start is called before the first frame update
     void Start() {
+        aipath.canMove = false;
         sprite = GetComponent<SpriteRenderer>();
         player = GameObject.FindGameObjectWithTag("Player");
         anim = GetComponent<Animator>();
@@ -36,13 +37,16 @@ public class EnemyMove : MonoBehaviour {
             sprite.flipX = false;
         }
 
-        if (lastStateX == newX && lastStateY == newY && befX == lastStateX && lastStateY == befY) {
-            anim.SetBool("running", false);
+        if (lastStateX == newX && lastStateY == newY)    //befX == lastStateX && lastStateY == befY
+        {
+            timer += Time.deltaTime;
+            
         } else {
-            anim.SetBool("running", true);
+            timer = 0;
         }
-        befX = lastStateX;
-        befY = lastStateY;
+
+        anim.SetBool("running", timer < idleCooldown);
+
         lastStateX = newX;
         lastStateY = newY;
 
@@ -56,7 +60,7 @@ public class EnemyMove : MonoBehaviour {
         float distance = Vector2.Distance(positionEnemy, positionPlayer);
 
         if (distance < radius) {
-            Debug.Log($"dist = {distance.ToString()}");
+            //Debug.Log($"dist = {distance.ToString()}");
 
             aipath.canMove = true;
         }

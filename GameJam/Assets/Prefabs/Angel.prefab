@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 4717477874947308417}
   - component: {fileID: 7204190549681333847}
   - component: {fileID: -1536757890015308414}
+  - component: {fileID: 8101656052787553807}
   m_Layer: 3
   m_Name: Angel
   m_TagString: Enemy
@@ -215,7 +216,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aipath: {fileID: 1857670365520651487}
-  canMove: 0
 --- !u!50 &4717477874947308417
 Rigidbody2D:
   serializedVersion: 4
@@ -271,3 +271,17 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8101656052787553807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857670365520651482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd5112190535d2f4ab246a298ef0e895, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackRadius: 6
+  projectile: {fileID: 7185932647736743711, guid: 24725d5e268f6724fb885e69b5ddc651, type: 3}

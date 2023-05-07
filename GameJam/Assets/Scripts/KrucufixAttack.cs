@@ -44,7 +44,7 @@ public class KrucufixAttack : MonoBehaviour
 
     private void HoldWeapon()
     {
-        float posY = enemy.transform.position.y - 0.3f;
+        float posY = enemy.transform.position.y - 0.1f;
         float posX = enemy.transform.position.x;
 
         if (player.transform.position.x < enemy.transform.position.x)

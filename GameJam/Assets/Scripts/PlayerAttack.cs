@@ -11,7 +11,7 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] GameObject projectile;
     GameObject player;
     private static float stabDuration = 0.3f;
-    private static float stabRange = 4;
+    private static float stabRange = 5f;
     private float stabVelocity = stabRange / stabDuration;
     private Vector3 stabDir;
     private float timer = 0f;
@@ -79,7 +79,8 @@ public class PlayerAttack : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            collision.gameObject.GetComponent<EnemyLife>().TakeDamage(stabDamage);
+            if (stabbing) collision.gameObject.GetComponent<EnemyLife>().TakeDamage(stabDamage);
+            else collision.gameObject.GetComponent<EnemyLife>().TakeDamage(1);
         }
     }
 }

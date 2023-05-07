@@ -6,12 +6,10 @@ TagManager:
   tags:
   - Enemy
   - trident
-  - ep
-  - pp
-  - p
   - Spawner
   - Logic
   - wall
+  - water
   layers:
   - Default
   - TransparentFX
