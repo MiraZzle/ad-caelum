@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AngleAtack : MonoBehaviour
+public class ChesusAttack : MonoBehaviour
 {
-    [SerializeField] private float attackRadius = 6f;
+    [SerializeField] private float attackRadius = 10f;
     [SerializeField] GameObject projectile;
     GameObject player;
-    float coolDown = 1.5f;
+    float coolDown = 2f;
     float cdTimer = 0f;
-    int angleArc = 30;
+    int angleArc = 20;
 
     void Start()
     {
@@ -38,9 +38,9 @@ public class AngleAtack : MonoBehaviour
         );
 
 
-        for (int angleDiff = -angleArc; angleDiff <= angleArc; angleDiff += angleArc)
+        for (int angleDiff = angleArc; angleDiff <= 360; angleDiff += angleArc)
         {
-            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90 + angleDiff;
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg + angleDiff;
             var rotation = Quaternion.AngleAxis(angle, Vector3.forward);
             Instantiate(projectile, transform.position, rotation);
         }
