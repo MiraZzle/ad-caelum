@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class VideoLogic : MonoBehaviour
 {
+    /*
     public VideoPlayer VideoPlayer; // Drag & Drop the GameObject holding the VideoPlayer component
     public string SceneName;
     videoPlayer.loopPointReached += EndReached;
@@ -19,5 +20,5 @@ public class VideoLogic : MonoBehaviour
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("Menu");
     }
-
+    */
 }
