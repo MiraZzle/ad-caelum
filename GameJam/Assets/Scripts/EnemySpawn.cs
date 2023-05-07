@@ -11,9 +11,9 @@ public class EnemySpawn : MonoBehaviour
     [SerializeField]
     private GameObject Angel;
 
-    private float priestInterval = 3f;
-    private float monkInterval = 4f;
-    private float angelInrerval = 5f;
+    private float priestInterval = 2f;
+    private float monkInterval = 2f;
+    private float angelInrerval = 3f;
 
     [SerializeField] private int priestCount = 3;
     [SerializeField] private int monkCount = 3;
