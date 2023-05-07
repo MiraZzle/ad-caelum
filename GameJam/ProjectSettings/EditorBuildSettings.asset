@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: c4601b70deaf2d14cbeedd60ed5e0658
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Highscore.unity
     guid: 9c0469205bfa1cc489a2568b61fd7920
   - enabled: 1
@@ -22,5 +22,11 @@ EditorBuildSettings:
     guid: 89fbde1d4deaffa42847a197760675cc
   - enabled: 1
     path: Assets/Scenes/Levels/Level1.unity
-    guid: 8ca4d8e38793b354096e89be6fa5d172
+    guid: 1861efc79fa76064d9941173df198f47
+  - enabled: 1
+    path: Assets/Scenes/EndScreenLosing.unity
+    guid: d0c4952d4948ec345a831b8aec24fe5d
+  - enabled: 1
+    path: Assets/Scenes/EndScreenWinning.unity
+    guid: fdc8d5ead755d7846a8f181cb740f766
   m_configObjects: {}
