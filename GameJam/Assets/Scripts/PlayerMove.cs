@@ -8,22 +8,27 @@ public class PlayerMove : MonoBehaviour {
     private Animator anim;
     public ParticleSystem player_trail;
     public static float moveSpeed = 5f;
+    private PlayerLife zivot;
 
     void Start() {
         rb = GetComponent<Rigidbody2D>();
+        zivot = GetComponent<PlayerLife>();
         sprite = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
     }
 
-    void Update() {
-        float dirX = Input.GetAxisRaw("Horizontal");
-        float dirY = Input.GetAxisRaw("Vertical");
-        Vector2 velocity = new Vector2(dirX, dirY);
-        velocity = velocity.normalized * moveSpeed;
-        rb.velocity = velocity;
-
-        AnimationUpdate(dirX, dirY);
-        flipTowardMouse();
+    void Update()
+    {
+        if (zivot.isALive)
+        {
+            float dirX = Input.GetAxisRaw("Horizontal");
+            float dirY = Input.GetAxisRaw("Vertical");
+            Vector2 velocity = new Vector2(dirX, dirY);
+            velocity = velocity.normalized * moveSpeed;
+            rb.velocity = velocity;
+            AnimationUpdate(dirX, dirY);
+            flipTowardMouse();
+        }
     }
 
     private void AnimationUpdate(float dirX, float dirY) {

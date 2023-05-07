@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,9 +9,11 @@ public class PlayerLife : MonoBehaviour {
     public bool isALive = true;
     private SimpleFlash simpleFlash;
     private Animator anim;
+    GameObject trident;
 
     void Start() {
         simpleFlash = gameObject.GetComponent<SimpleFlash>();
+        trident = GameObject.FindGameObjectWithTag("trident");
         anim = GetComponent<Animator>();
     }
 
@@ -18,7 +21,8 @@ public class PlayerLife : MonoBehaviour {
         hp -= damage;
         if (hp <= 0) {
             isALive = false;
-            anim.SetBool("isDead", true);
+            Destroy(trident);
+            anim.SetBool("isDeat", true);
             Invoke("Death", 1f);
         } else {
             simpleFlash.Flash();
