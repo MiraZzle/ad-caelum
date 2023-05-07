@@ -6,6 +6,7 @@ public class PlayerMove : MonoBehaviour {
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
     private Animator anim;
+    public ParticleSystem player_trail;
     public static float moveSpeed = 5f;
 
     void Start() {
@@ -29,6 +30,7 @@ public class PlayerMove : MonoBehaviour {
         if (dirX == 0f && dirY == 0f) {
             anim.SetBool("running", false);
         } else {
+            playParticle();
             anim.SetBool("running", true);
         }
     }
@@ -43,5 +45,9 @@ public class PlayerMove : MonoBehaviour {
         else {
             sprite.flipX = false;
         }
+    }
+
+    private void playParticle() {
+        player_trail.Play();
     }
 }

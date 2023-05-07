@@ -130,6 +130,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2697506270975006834, guid: b274d8007ccf76141ac8badf9ce5719b, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3119651830547953984, guid: b274d8007ccf76141ac8badf9ce5719b, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8883969456140931921, guid: b274d8007ccf76141ac8badf9ce5719b, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -173,6 +181,10 @@ PrefabInstance:
     - target: {fileID: 8883969456140931921, guid: b274d8007ccf76141ac8badf9ce5719b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8883969456140931922, guid: b274d8007ccf76141ac8badf9ce5719b, type: 3}
+      propertyPath: player_trail
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8883969456140931932, guid: b274d8007ccf76141ac8badf9ce5719b, type: 3}
       propertyPath: m_Name
