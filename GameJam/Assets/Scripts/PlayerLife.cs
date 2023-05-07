@@ -10,15 +10,19 @@ public class PlayerLife : MonoBehaviour {
     private SimpleFlash simpleFlash;
     private Animator anim;
     GameObject trident;
+    [SerializeField] GameObject healthBar;
 
     void Start() {
+        healthBar.GetComponent<HealthBar>().SetMaxHealth(hp);
         simpleFlash = gameObject.GetComponent<SimpleFlash>();
         trident = GameObject.FindGameObjectWithTag("trident");
         anim = GetComponent<Animator>();
     }
 
-    public void TakeDamage(int damage) {
+    public void TakeDamage(int damage) 
+    {
         hp -= damage;
+        healthBar.GetComponent<HealthBar>().SetHealth(hp);
         if (hp <= 0) {
             isALive = false;
             Destroy(trident);

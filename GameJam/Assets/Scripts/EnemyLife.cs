@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyLife : MonoBehaviour {
-    [SerializeField] private int hp = 0;
+    [SerializeField] public int hp = 0;
     private SimpleFlash simpleFlash;
     GameObject logicManager;
     LevelLogic logicScript;
