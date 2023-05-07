@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 5034839361962891772}
   - component: {fileID: 7063418540724349645}
   - component: {fileID: 844241172210491371}
+  - component: {fileID: 2439514401981544695}
   m_Layer: 3
   m_Name: Chesus
   m_TagString: Enemy
@@ -281,6 +282,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackRadius: 10
   projectile: {fileID: 7185932647736743711, guid: 24725d5e268f6724fb885e69b5ddc651, type: 3}
+--- !u!95 &2439514401981544695
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4603522974050966385}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 144c3b3c5ac428b42989feeaf556fb7d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &4134183575776063698
 PrefabInstance:
   m_ObjectHideFlags: 0
