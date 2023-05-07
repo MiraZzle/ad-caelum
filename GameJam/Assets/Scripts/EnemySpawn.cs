@@ -18,6 +18,8 @@ public class EnemySpawn : MonoBehaviour
     [SerializeField] private int priestCount = 3;
     [SerializeField] private int monkCount = 3;
     [SerializeField] private int angleCount = 3;
+    [SerializeField] private int manualCount = 0;
+
     public int totalEnemies;
 
     [SerializeField] private float minX = 1;
@@ -29,7 +31,7 @@ public class EnemySpawn : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        totalEnemies = priestCount + monkCount + angleCount;
+        totalEnemies = priestCount + monkCount + angleCount + manualCount;
 
         if (priestCount > 0) StartCoroutine(spawnEnemy(priestInterval, Priest, 0, priestCount));
         if (monkCount > 0) StartCoroutine(spawnEnemy(monkInterval, Monk, 0, monkCount));

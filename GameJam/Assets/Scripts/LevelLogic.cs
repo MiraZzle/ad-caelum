@@ -12,7 +12,7 @@ public class LevelLogic : MonoBehaviour
 
     void Update()
     {
-        if (killedEnemies == spawnScript.totalEnemies)
+        if (killedEnemies >= spawnScript.totalEnemies)
         {
             levelWon = true;
         }
