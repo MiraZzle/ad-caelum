@@ -18,15 +18,48 @@ EditorBuildSettings:
     path: Assets/Scenes/Highscore.unity
     guid: 9c0469205bfa1cc489a2568b61fd7920
   - enabled: 1
-    path: Assets/Scenes/Sources.unity
-    guid: 89fbde1d4deaffa42847a197760675cc
-  - enabled: 1
     path: Assets/Scenes/Levels/Level1.unity
     guid: 1861efc79fa76064d9941173df198f47
   - enabled: 1
-    path: Assets/Scenes/EndScreenLosing.unity
-    guid: d0c4952d4948ec345a831b8aec24fe5d
+    path: Assets/Scenes/Levels/Level2.unity
+    guid: 3a8eb56a5a062574b80700c4b6bb6df0
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level3.unity
+    guid: dcaee36f395288848ad16cf142b071aa
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level4.unity
+    guid: 7df06370672bb6b4e86f281b77a4d92d
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level5.unity
+    guid: 96177879ab4234f409cd16851287c4a4
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level6.unity
+    guid: 996b2d6098fd1b24d868d80e8103e53f
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level7.unity
+    guid: a04035e0e46da0548a93315f9e622b28
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level8.unity
+    guid: cfc128f2ba3461f46bfc4723c0f43e24
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level9.unity
+    guid: c761715ad43841240944b67dd6a40471
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level10.unity
+    guid: 43fd14ac8fd6fea4ab013b231be8e926
+  - enabled: 1
+    path: Assets/Scenes/Levels/Boss.unity
+    guid: 482402607f02f2941a1686a65e9a6a24
+  - enabled: 1
+    path: Assets/Scenes/cutscene.unity
+    guid: deb4c0993ba560b4588fedb8015170fb
+  - enabled: 1
+    path: Assets/Scenes/Sources.unity
+    guid: 89fbde1d4deaffa42847a197760675cc
   - enabled: 1
     path: Assets/Scenes/EndScreenWinning.unity
     guid: fdc8d5ead755d7846a8f181cb740f766
+  - enabled: 1
+    path: Assets/Scenes/EndScreenLosing.unity
+    guid: d0c4952d4948ec345a831b8aec24fe5d
   m_configObjects: {}

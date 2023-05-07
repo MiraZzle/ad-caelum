@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DoorLogic : MonoBehaviour
 {
@@ -27,11 +28,16 @@ public class DoorLogic : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!opened) return;
-        
+
         if (collision.gameObject.tag == "Player" && !playerEnteredDoor)
         {
             playerEnteredDoor = true;
-            Debug.Log("Transition");
+            Invoke("CompleteLevel", 1f);
         }
+    }
+
+    void CompleteLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
