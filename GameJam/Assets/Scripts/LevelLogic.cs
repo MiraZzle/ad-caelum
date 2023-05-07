@@ -5,20 +5,14 @@ using UnityEngine;
 
 public class LevelLogic : MonoBehaviour
 {
-    int enemiesInLevel;
+    public int enemiesInLevel = -1;
     public int killedEnemies;
     public bool levelWon = false;
+    [SerializeField] private EnemySpawn spawnScript;
 
-    void Start()
-    {
-        GameObject spawner = GameObject.FindGameObjectWithTag("Spawner");
-        enemiesInLevel = spawner.GetComponent<EnemySpawn>().totalEnemies;
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        if (killedEnemies == enemiesInLevel)
+        if (killedEnemies == spawnScript.totalEnemies)
         {
             levelWon = true;
         }
