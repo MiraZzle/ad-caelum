@@ -5,8 +5,8 @@
 
 ## Our team
 - <a href="https://github.com/Couleslaw"> Jakub Smolík</a> - programming (lead) and git master
-- <a href="https://github.com/spicybutter123">Karel Velička</a> - programming and vfx
-- <a href="https://github.com/tucnakomet1">Michal Tkáčik</a> - level design
+- <a href="https://github.com/tucnakomet1">Karel Velička</a> - programming and vfx
+- <a href="https://github.com/spicybutter123">Michal Tkáčik</a> - level design
 - <a href="https://github.com/MiraZzle">Matěj Foukal</a> - visuals and level design
 
 ## Commit conventions
