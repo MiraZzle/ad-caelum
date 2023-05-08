@@ -23,17 +23,20 @@ public class PlayerLife : MonoBehaviour {
     {
         hp -= damage;
         healthBar.GetComponent<HealthBar>().SetHealth(hp);
-        if (hp <= 0) {
+        if (hp <= 0) 
+        {
             isALive = false;
             Destroy(trident);
-            anim.SetBool("isDeat", true);
-            Invoke("Death", 1f);
-        } else {
+            anim.SetBool("isDeat", true);  // this is not a typo, the variable is reall named like this
+            Invoke("Death", 2f);
+        } else 
+        {
             simpleFlash.Flash();
         }
     }
 
-    void Death() {
+    void Death() 
+    {
         SceneManager.LoadScene("EndScreenLosing");
     }
 }

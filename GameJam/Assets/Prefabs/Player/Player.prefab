@@ -4924,11 +4924,11 @@ GameObject:
   - component: {fileID: 8883969456140931921}
   - component: {fileID: 8883969456140931920}
   - component: {fileID: 8883969456140931934}
-  - component: {fileID: 8883969456140931923}
-  - component: {fileID: 8883969456140931922}
   - component: {fileID: 8883969456140931924}
   - component: {fileID: -6145833963559071594}
   - component: {fileID: -8396904399176449595}
+  - component: {fileID: 8883969456140931923}
+  - component: {fileID: 8883969456140931922}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -5031,34 +5031,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.51, y: 0.81}
   m_EdgeRadius: 0
---- !u!114 &8883969456140931923
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8883969456140931932}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef9b6a26451d4764a8ed817969ec3236, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hp: 20
-  isALive: 1
-  healthBar: {fileID: 6390134331758205590}
---- !u!114 &8883969456140931922
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8883969456140931932}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b35bf12e515a7664c908f862bf79d14f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player_trail: {fileID: 5671216926324787023}
 --- !u!50 &8883969456140931924
 Rigidbody2D:
   serializedVersion: 4
@@ -5115,6 +5087,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flashMaterial: {fileID: 2100000, guid: d462f6e9378137a4ebf7e955a9a55fed, type: 2}
   duration: 0.125
+--- !u!114 &8883969456140931923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8883969456140931932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef9b6a26451d4764a8ed817969ec3236, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 20
+  isALive: 1
+  healthBar: {fileID: 6390134331758205590}
+--- !u!114 &8883969456140931922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8883969456140931932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b35bf12e515a7664c908f862bf79d14f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player_trail: {fileID: 5671216926324787023}
 --- !u!1001 &6141169741421348705
 PrefabInstance:
   m_ObjectHideFlags: 0

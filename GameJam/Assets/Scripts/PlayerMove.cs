@@ -3,23 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMove : MonoBehaviour {
-    private Rigidbody2D rb;
     private SpriteRenderer sprite;
+    private Rigidbody2D rb;
+    private PlayerLife playerLifeManager;
+
     private Animator anim;
     public ParticleSystem player_trail;
+
     public static float moveSpeed = 5f;
-    private PlayerLife zivot;
+
 
     void Start() {
-        rb = GetComponent<Rigidbody2D>();
-        zivot = GetComponent<PlayerLife>();
         sprite = GetComponent<SpriteRenderer>();
+        rb = GetComponent<Rigidbody2D>();
+        playerLifeManager = GetComponent<PlayerLife>();
         anim = GetComponent<Animator>();
     }
 
     void Update()
     {
-        if (zivot.isALive)
+        if (playerLifeManager.isALive)
         {
             float dirX = Input.GetAxisRaw("Horizontal");
             float dirY = Input.GetAxisRaw("Vertical");
@@ -28,6 +31,11 @@ public class PlayerMove : MonoBehaviour {
             rb.velocity = velocity;
             AnimationUpdate(dirX, dirY);
             flipTowardMouse();
+        }
+        else
+        {
+            rb.velocity = Vector2.zero;
+            rb.bodyType = RigidbodyType2D.Static;
         }
     }
 
