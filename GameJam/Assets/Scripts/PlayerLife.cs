@@ -5,31 +5,39 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PlayerLife : MonoBehaviour {
-    public int hp = 20;
-    public bool isALive = true;
+    [SerializeField] public int maxHp;
+    public int currentHp;
+    public bool isAlive = true;
     private SimpleFlash simpleFlash;
     private Animator anim;
     GameObject trident;
     [SerializeField] GameObject healthBar;
 
-    void Start() {
-        healthBar.GetComponent<HealthBar>().SetMaxHealth(hp);
+    void Start() 
+    {
+        currentHp = maxHp;
         simpleFlash = gameObject.GetComponent<SimpleFlash>();
         trident = GameObject.FindGameObjectWithTag("trident");
         anim = GetComponent<Animator>();
     }
 
+    private void Update()
+    {
+        healthBar.GetComponent<HealthBar>().SetMaxHealth(maxHp);
+    }
     public void TakeDamage(int damage) 
     {
-        hp -= damage;
-        healthBar.GetComponent<HealthBar>().SetHealth(hp);
-        if (hp <= 0) 
+        currentHp -= damage;
+        healthBar.GetComponent<HealthBar>().SetHealth(currentHp);
+
+        if (currentHp <= 0) 
         {
-            isALive = false;
+            isAlive = false;
             Destroy(trident);
             anim.SetBool("isDeat", true);  // this is not a typo, the variable is reall named like this
             Invoke("Death", 2f);
-        } else 
+        } 
+        else 
         {
             simpleFlash.Flash();
         }

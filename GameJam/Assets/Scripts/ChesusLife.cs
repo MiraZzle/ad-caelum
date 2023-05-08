@@ -6,16 +6,13 @@ public class ChesusLife : MonoBehaviour
 {
     [SerializeField] GameObject healthBar;
 
-    void Start()
-    {
-        int hp = GetComponent<EnemyLife>().hp;
-        healthBar.GetComponent<HealthBar>().SetMaxHealth(hp);
-    }
-
     // Update is called once per frame
     void Update()
     {
-        int hp = GetComponent<EnemyLife>().hp;
+        int hp = GetComponent<EnemyLife>().CurrentHp;
+        int maxHp = GetComponent<EnemyLife>().maxHp;
+
         healthBar.GetComponent<HealthBar>().SetHealth(hp);
+        healthBar.GetComponent<HealthBar>().SetMaxHealth(maxHp);
     }
 }

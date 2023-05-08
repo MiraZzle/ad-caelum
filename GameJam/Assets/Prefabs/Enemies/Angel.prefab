@@ -251,8 +251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38da78f8a9d42ae4ab1f8346fd7bfec5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitEnemySoundEffect: {fileID: 1891884556428254509}
-  hp: 10
+  maxHp: 10
 --- !u!95 &-1536757890015308414
 Animator:
   serializedVersion: 5

@@ -22,7 +22,7 @@ public class PlayerMove : MonoBehaviour {
 
     void Update()
     {
-        if (playerLifeManager.isALive)
+        if (playerLifeManager.isAlive)
         {
             float dirX = Input.GetAxisRaw("Horizontal");
             float dirY = Input.GetAxisRaw("Vertical");

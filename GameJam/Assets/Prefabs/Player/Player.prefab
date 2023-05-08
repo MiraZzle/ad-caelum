@@ -5099,8 +5099,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef9b6a26451d4764a8ed817969ec3236, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 20
-  isALive: 1
+  maxHp: 20
+  currentHp: 0
+  isAlive: 1
   healthBar: {fileID: 6390134331758205590}
 --- !u!114 &8883969456140931922
 MonoBehaviour:

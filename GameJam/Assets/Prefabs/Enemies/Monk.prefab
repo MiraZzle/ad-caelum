@@ -5213,8 +5213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38da78f8a9d42ae4ab1f8346fd7bfec5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitEnemySoundEffect: {fileID: 3043078923361533402}
-  hp: 3
+  maxHp: 3
 --- !u!95 &2689517028234687932
 Animator:
   serializedVersion: 5

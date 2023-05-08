@@ -4,12 +4,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyLife : MonoBehaviour {
-    [SerializeField] public int hp = 0;
+    [SerializeField] public int maxHp;
+    public int CurrentHp;
     private SimpleFlash simpleFlash;
     GameObject logicManager;
     LevelLogic logicScript;
 
     void Start() {
+        CurrentHp = maxHp;
         simpleFlash = gameObject.GetComponent<SimpleFlash>();
         logicManager = GameObject.FindGameObjectWithTag("Logic");
         logicScript = logicManager. GetComponent<LevelLogic>();
@@ -17,8 +19,8 @@ public class EnemyLife : MonoBehaviour {
 
     public void TakeDamage(int damage) {
 
-        hp -= damage;
-        if (hp <= 0) {
+        CurrentHp -= damage;
+        if (CurrentHp <= 0) {
             Destroy(gameObject);
             logicScript.killedEnemies += 1;
         }
