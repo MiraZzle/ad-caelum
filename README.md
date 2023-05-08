@@ -1,7 +1,13 @@
-# Super Awesome Game Title!
+# Ad Caelum
 
-## About
-This is a designated repository for our team's submission to <a href="https://itch.io/jam/spring-game-jam-cuni-mff"> Matfyz Spring Jam</a>.
+## About the project
+ <a href="https://mirazzle.itch.io/ad-caelum"> Ad Caelum</a> is a game developed in 48 hours during <a href="https://itch.io/jam/spring-game-jam-cuni-mff"> Matfyz Spring Jam</a>. Ad Caelum is a bullet hell pixel art dungeon crawler. Plaers main task is to fight his way through a series of dungeons. 
+
+## Our team
+- <a href="https://github.com/Couleslaw"> Jakub Smolík</a> - programming (lead)
+- <a href="https://github.com/spicybutter123">Karel Velička</a> - programming and vfx
+- <a href="https://github.com/tucnakomet1">Michal Tkáčik</a> - level design
+- <a href="https://github.com/MiraZzle">Matěj Foukal</a> - visuals and level design
 
 ## Commit conventions
 We use <a href="https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/"> Conventional Commits</a>.
