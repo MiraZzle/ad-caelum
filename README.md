@@ -1,10 +1,10 @@
 # Ad Caelum
 
 ## About the project
- <a href="https://mirazzle.itch.io/ad-caelum"> Ad Caelum</a> is a game developed in 48 hours during <a href="https://itch.io/jam/spring-game-jam-cuni-mff"> Matfyz Spring Jam</a>. Ad Caelum is a bullet hell pixel art dungeon crawler. Players main task is to fight his way through a series of dungeons. 
+ <a href="https://mirazzle.itch.io/ad-caelum"> Ad Caelum</a> is a game developed in 48 hours during <a href="https://itch.io/jam/spring-game-jam-cuni-mff"> Matfyz Spring Jam</a>. Ad Caelum is a bullet hell pixel art dungeon crawler. Players main task is to fight his way through a series of dungeons. The github version continues to be improved.
 
 ## Our team
-- <a href="https://github.com/Couleslaw"> Jakub Smolík</a> - programming (lead)
+- <a href="https://github.com/Couleslaw"> Jakub Smolík</a> - programming (lead) and git master
 - <a href="https://github.com/spicybutter123">Karel Velička</a> - programming and vfx
 - <a href="https://github.com/tucnakomet1">Michal Tkáčik</a> - level design
 - <a href="https://github.com/MiraZzle">Matěj Foukal</a> - visuals and level design
