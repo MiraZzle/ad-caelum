@@ -58,9 +58,9 @@ public class ChesusAttack : MonoBehaviour
         );
 
 
-        for (int angleDiff = angleArc; angleDiff <= 360; angleDiff += angleArc)
+        for (int angleDiff = 0; angleDiff < 360; angleDiff += angleArc)
         {
-            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg + angleDiff;
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90 + angleDiff;
             var rotation = Quaternion.AngleAxis(angle, Vector3.forward);
             Instantiate(projectile, transform.position, rotation);
         }
