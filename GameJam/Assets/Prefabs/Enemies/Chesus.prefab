@@ -5102,9 +5102,9 @@ MonoBehaviour:
   targetCompatibility: {fileID: 0}
   maxAcceleration: -2.5
   rotationSpeed: 360
-  slowdownDistance: 10
+  slowdownDistance: 7
   pickNextWaypointDist: 1.2
-  endReachedDistance: 6
+  endReachedDistance: 5
   alwaysDrawGizmos: 0
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
@@ -5169,7 +5169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38da78f8a9d42ae4ab1f8346fd7bfec5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 100
+  maxHp: 50
   CurrentHp: 0
 --- !u!114 &7063418540724349645
 MonoBehaviour:
@@ -5344,7 +5344,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 979392210752888308, guid: 1d1e182a5c0e97d4bada4d883d3827c0, type: 3}
       propertyPath: m_Value
-      value: 20
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 979392210752888308, guid: 1d1e182a5c0e97d4bada4d883d3827c0, type: 3}
+      propertyPath: m_MaxValue
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 979392210752888310, guid: 1d1e182a5c0e97d4bada4d883d3827c0, type: 3}
       propertyPath: m_Pivot.x
