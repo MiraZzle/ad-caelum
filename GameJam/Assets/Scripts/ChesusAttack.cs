@@ -8,7 +8,7 @@ public class ChesusAttack : MonoBehaviour
     [SerializeField] private float attackRadius = 10f;
     [SerializeField] GameObject projectile;
     GameObject player;
-    float coolDown = 2f;
+    float coolDown = 1.5f;
     float cdTimer = 0f;
     int angleArc = 20;
     bool animation = false;

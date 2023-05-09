@@ -23,12 +23,12 @@ public class PlayerLife : MonoBehaviour {
 
     private void Update()
     {
+        healthBar.GetComponent<HealthBar>().SetHealth(currentHp);
         healthBar.GetComponent<HealthBar>().SetMaxHealth(maxHp);
     }
     public void TakeDamage(int damage) 
     {
         currentHp -= damage;
-        healthBar.GetComponent<HealthBar>().SetHealth(currentHp);
 
         if (currentHp <= 0) 
         {
