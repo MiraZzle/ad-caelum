@@ -8,8 +8,12 @@ public class LevelLogic : MonoBehaviour
 {
     public int killedEnemies;
     public bool levelWon = false;
-    [SerializeField] private EnemySpawn spawnScript;
+    private EnemySpawn spawnScript;
 
+    private void Start()
+    {
+        spawnScript = GameObject.FindGameObjectWithTag("Spawner").GetComponent<EnemySpawn>();
+    }
     void Update()
     {
         if (killedEnemies >= spawnScript.totalEnemies)
