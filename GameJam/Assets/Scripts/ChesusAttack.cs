@@ -11,7 +11,7 @@ public class ChesusAttack : MonoBehaviour
     float coolDown = 1.5f;
     float cdTimer = 0f;
     int angleArc = 20;
-    bool animation = false;
+    bool attackAnimation = false;
     float animationTimer = 0f;
     float animationDurration = 0.3f;
 
@@ -28,13 +28,13 @@ public class ChesusAttack : MonoBehaviour
         if (cdTimer > coolDown - animationDurration)
         {
             anim.SetBool("attack", true);
-            animation = true;
+            attackAnimation = true;
         }
 
-        if (animation) animationTimer += Time.deltaTime;
+        if (attackAnimation) animationTimer += Time.deltaTime;
         if (animationTimer > animationDurration)
         {
-            animation = false;
+            attackAnimation = false;
             anim.SetBool("attack", false);
             animationTimer = 0f;
         }

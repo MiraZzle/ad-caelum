@@ -5,8 +5,8 @@ using UnityEngine;
 public class MoveOrb : MonoBehaviour
 {
     [SerializeField] GameObject chesus;
-    [SerializeField] float radius = 3f;
-    [SerializeField] float loopTime = 2f;
+    float radius = 2f;
+    float loopTime = 1f;
     [SerializeField] float angle = 0f;
     int damage = 1;
 
@@ -18,7 +18,7 @@ public class MoveOrb : MonoBehaviour
 
     void Update()
     {
-        angle = (angle + Time.deltaTime * 360) % 360;
+        angle = (angle + Time.deltaTime / loopTime * 360) % 360;
 
         transform.position = chesus.transform.position + new Vector3(
             Mathf.Cos(Mathf.Deg2Rad * angle) * radius,
