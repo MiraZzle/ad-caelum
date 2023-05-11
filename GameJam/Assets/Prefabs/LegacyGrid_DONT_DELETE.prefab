@@ -1831,7 +1831,7 @@ GameObject:
   - component: {fileID: 1433091553585187362}
   - component: {fileID: 1433091553585187357}
   m_Layer: 0
-  m_Name: LegacyGrid
+  m_Name: LegacyGrid_DONT_DELETE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
