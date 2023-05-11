@@ -23,7 +23,12 @@ public class LevelLogic : MonoBehaviour
 
         if (levelWon && SceneManager.GetActiveScene().name == "Boss")
         {
-            SceneManager.LoadScene("EndScreenWinning");
+            Invoke("BossDefeated", 2f);
         }
+    }
+
+    private void BossDefeated()
+    {
+        SceneManager.LoadScene("EndScreenWinning");
     }
 }

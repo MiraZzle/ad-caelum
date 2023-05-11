@@ -189,6 +189,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ChesusSprite
       objectReference: {fileID: 0}
+    - target: {fileID: 5034839361962891772, guid: 11ffb19c0a9a2064bb12473828394489, type: 3}
+      propertyPath: isBoss
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5643115341802378478, guid: 11ffb19c0a9a2064bb12473828394489, type: 3}
       propertyPath: healthBar
       value: 

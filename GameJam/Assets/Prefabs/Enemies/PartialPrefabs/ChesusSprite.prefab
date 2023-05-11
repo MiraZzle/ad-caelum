@@ -4828,11 +4828,11 @@ GameObject:
   - component: {fileID: 4603522974050966391}
   - component: {fileID: 4603522974050966390}
   - component: {fileID: 7445263521781580842}
-  - component: {fileID: 5034839361962891772}
   - component: {fileID: 7063418540724349645}
   - component: {fileID: 844241172210491371}
   - component: {fileID: 2439514401981544695}
   - component: {fileID: 5643115341802378478}
+  - component: {fileID: 5034839361962891772}
   - component: {fileID: 3532315060236978088}
   m_Layer: 3
   m_Name: ChesusSprite
@@ -5056,20 +5056,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &5034839361962891772
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4603522974050966385}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38da78f8a9d42ae4ab1f8346fd7bfec5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHp: 50
-  CurrentHp: 0
 --- !u!114 &7063418540724349645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5132,6 +5118,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
+--- !u!114 &5034839361962891772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4603522974050966385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38da78f8a9d42ae4ab1f8346fd7bfec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHp: 50
+  CurrentHp: 0
 --- !u!114 &3532315060236978088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5144,6 +5144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e624a6a0a68fe6408b1f57906961a7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  chesus: {fileID: 4603522974050966385}
 --- !u!1001 &4134183575776063698
 PrefabInstance:
   m_ObjectHideFlags: 0

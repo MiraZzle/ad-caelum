@@ -4,12 +4,9 @@ using UnityEngine;
 
 public class EnemySpawn : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject Priest;
-    [SerializeField]
-    private GameObject Monk;
-    [SerializeField]
-    private GameObject Angel;
+    public GameObject Priest;
+    public GameObject Monk;
+    public GameObject Angel;
 
     private int enemyTypesCount = 3;
 

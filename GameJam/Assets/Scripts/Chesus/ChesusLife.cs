@@ -14,5 +14,16 @@ public class ChesusLife : MonoBehaviour
 
         healthBar.GetComponent<HealthBar>().SetHealth(hp);
         healthBar.GetComponent<HealthBar>().SetMaxHealth(maxHp);
+
+        if (hp <= 0)
+        {
+            foreach (GameObject angel in GetComponent<ChesusSpawn>().spawnedAngels)
+            {
+                if (angel == null) continue;
+                EnemyLife angelLife = angel.GetComponent<EnemyLife>();  
+                angelLife.TakeDamage(angelLife.CurrentHp);
+            }
+            Destroy(gameObject);
+        }
     }
 }
